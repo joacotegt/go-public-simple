@@ -24,7 +24,7 @@ export function ProcessDemo() {
       description: "Analizando requisitos técnicos...",
       detail: "Revisión de bases técnicas y condiciones comerciales",
       icon: Brain,
-      triggerPoint: 0.3
+      triggerPoint: 0.25
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ export function ProcessDemo() {
       description: "Producto compatible localizado",
       detail: "Guantes de nitrilo (Stock disponible entre proveedores)",
       icon: Package,
-      triggerPoint: 0.5
+      triggerPoint: 0.4
     },
     {
       id: 4,
@@ -40,7 +40,7 @@ export function ProcessDemo() {
       description: "Oferta generada automáticamente",
       detail: "1.500 unidades, $2.450 c/u, entrega en 5 días",
       icon: FileText,
-      triggerPoint: 0.7
+      triggerPoint: 0.55
     },
     {
       id: 5,
@@ -48,13 +48,13 @@ export function ProcessDemo() {
       description: "Oferta enviada a Hospital San Felipe",
       detail: "Esperando resultados de adjudicación",
       icon: CheckCircle,
-      triggerPoint: 0.9
+      triggerPoint: 0.7
     }
   ];
 
   // Transform scroll progress to step progress
   const notificationOpacity = useTransform(scrollYProgress, [0, 0.2], [0, 1]);
-  const progressWidth = useTransform(scrollYProgress, [0.1, 0.9], [0, 100]);
+  const progressWidth = useTransform(scrollYProgress, [0.1, 0.7], [0, 100]);
 
   return (
     <section ref={containerRef} className="py-24 bg-gradient-to-br from-background to-muted/20 overflow-hidden">
@@ -107,28 +107,29 @@ export function ProcessDemo() {
             {steps.map((step, index) => {
               const Icon = step.icon;
               
+              // Mantener completamente visible después del 70%
               const stepOpacity = useTransform(
                 scrollYProgress, 
-                [step.triggerPoint - 0.1, step.triggerPoint], 
-                [0, 1]
+                [step.triggerPoint - 0.1, step.triggerPoint, 0.7], 
+                [0, 1, 1]
               );
               
               const stepX = useTransform(
                 scrollYProgress, 
-                [step.triggerPoint - 0.1, step.triggerPoint], 
-                [-50, 0]
+                [step.triggerPoint - 0.1, step.triggerPoint, 0.7], 
+                [-50, 0, 0]
               );
 
               const isActive = useTransform(
                 scrollYProgress,
-                [step.triggerPoint - 0.05, step.triggerPoint],
-                [0, 1]
+                [step.triggerPoint - 0.05, step.triggerPoint, 0.7],
+                [0, 1, 1]
               );
 
               const isCurrent = useTransform(
                 scrollYProgress,
-                [step.triggerPoint - 0.05, step.triggerPoint, step.triggerPoint + 0.15],
-                [0, 1, 0]
+                [step.triggerPoint - 0.05, step.triggerPoint, step.triggerPoint + 0.1, 0.7],
+                [0, 1, 0, 0]
               );
               
               return (
