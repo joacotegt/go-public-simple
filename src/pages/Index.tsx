@@ -4,6 +4,9 @@ import { Stats } from "@/components/sections/Stats";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { ProcessDemo } from "@/components/sections/ProcessDemo";
 import { Comparison } from "@/components/sections/Comparison";
+import { Coverage } from "@/components/sections/Coverage";
+import { PublicTrust } from "@/components/sections/PublicTrust";
+import { Brands } from "@/components/sections/Brands";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { Team } from "@/components/sections/Team";
 import { Contact } from "@/components/sections/Contact";
@@ -21,6 +24,9 @@ const Index = () => {
         <HowItWorks />
         <ProcessDemo />
         <Comparison />
+        <Coverage />
+        <PublicTrust />
+        <Brands />
         <Testimonials />
         <Team />
         <Contact />
