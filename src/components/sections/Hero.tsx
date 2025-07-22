@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
 export function Hero() {
-  return <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0" style={{
       backgroundImage: `url(${heroBg})`,
       backgroundSize: 'cover',
