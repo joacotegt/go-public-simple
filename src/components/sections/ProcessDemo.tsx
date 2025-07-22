@@ -6,7 +6,7 @@ export function ProcessDemo() {
   const containerRef = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start end", "end start"]
+    offset: ["start 0.8", "end 0.2"]
   });
   
   const steps = [
