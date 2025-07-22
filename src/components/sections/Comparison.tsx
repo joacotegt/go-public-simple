@@ -1,42 +1,31 @@
 import { CheckIcon, XIcon } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import sectionBg from "@/assets/section-bg.jpg";
-
-const comparisonData = [
-  {
-    aspect: "Proceso de licitación",
-    traditional: "Complejo y burocrático",
-    cronologis: "Totalmente gestionado por nosotros"
-  },
-  {
-    aspect: "Tiempo de pago",
-    traditional: "Hasta 120 días o más",
-    cronologis: "Garantizado en 30 días"
-  },
-  {
-    aspect: "Recursos necesarios",
-    traditional: "Personal dedicado a licitaciones",
-    cronologis: "Cero recursos adicionales"
-  },
-  {
-    aspect: "Logística",
-    traditional: "Compleja y variable por cliente",
-    cronologis: "Gestionada completamente"
-  }
-];
-
+const comparisonData = [{
+  aspect: "Proceso de licitación",
+  traditional: "Complejo y burocrático",
+  cronologis: "Totalmente gestionado por nosotros"
+}, {
+  aspect: "Tiempo de pago",
+  traditional: "Hasta 120 días o más",
+  cronologis: "Garantizado en 30 días"
+}, {
+  aspect: "Recursos necesarios",
+  traditional: "Personal dedicado a licitaciones",
+  cronologis: "Cero recursos adicionales"
+}, {
+  aspect: "Logística",
+  traditional: "Compleja y variable por cliente",
+  cronologis: "Gestionada completamente"
+}];
 export function Comparison() {
-  return (
-    <section className="py-24 relative overflow-hidden">
-      <div 
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `url(${sectionBg})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          opacity: 0.1
-        }}
-      />
+  return <section className="py-24 relative overflow-hidden">
+      <div className="absolute inset-0 z-0" style={{
+      backgroundImage: `url(${sectionBg})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      opacity: 0.1
+    }} />
       
       <div className="container relative z-10 mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
@@ -52,13 +41,13 @@ export function Comparison() {
           <div className="hidden md:block"></div>
           <div className="text-center">
             <div className="inline-flex items-center px-4 py-2 bg-destructive/10 border-l-4 border-destructive rounded-md shadow-sm">
-              <XIcon className="h-5 w-5 text-destructive mr-3" />
+              
               <span className="font-bold text-lg text-destructive">Venta tradicional</span>
             </div>
           </div>
           <div className="text-center">
             <div className="inline-flex items-center px-4 py-2 bg-primary/10 border-l-4 border-primary rounded-md shadow-sm">
-              <CheckIcon className="h-5 w-5 text-primary mr-3" />
+              
               <span className="font-bold text-lg text-primary">Con Cronologis</span>
             </div>
           </div>
@@ -66,8 +55,7 @@ export function Comparison() {
         
         {/* Comparison Table */}
         <div className="space-y-4">
-          {comparisonData.map((item, index) => (
-            <div key={index} className="grid md:grid-cols-3 gap-4 items-stretch">
+          {comparisonData.map((item, index) => <div key={index} className="grid md:grid-cols-3 gap-4 items-stretch">
               {/* Aspect Column */}
               <Card className="p-6 md:p-8 flex items-center justify-center text-center bg-gradient-to-br from-accent/5 to-accent/10 border-accent/30 shadow-sm">
                 <h3 className="font-semibold text-lg text-foreground leading-tight">{item.aspect}</h3>
@@ -92,8 +80,7 @@ export function Comparison() {
                 </div>
                 <p className="text-foreground font-medium leading-relaxed">{item.cronologis}</p>
               </Card>
-            </div>
-          ))}
+            </div>)}
         </div>
         
         {/* Call to Action */}
@@ -104,6 +91,5 @@ export function Comparison() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
