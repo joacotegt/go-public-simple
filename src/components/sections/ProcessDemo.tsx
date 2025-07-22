@@ -149,10 +149,10 @@ export function ProcessDemo() {
         }}>
             <div className="text-center">
               <h4 className="text-xl font-semibold mb-3 text-primary">
-                Notificación al Proveedor
+                Correo al Proveedor
               </h4>
               <p className="text-muted-foreground mb-4">
-                "Se ha enviado un correo electrónico al proveedor confirmando que Cronologis postuló en su nombre. No requiere ninguna acción adicional."
+                "Estimado proveedor, hemos postulado en su nombre a la licitación 'Compra de guantes de nitrilo - Hospital San Felipe'. Su oferta ha sido enviada exitosamente. Le mantendremos informado sobre el resultado."
               </p>
               
               <div className="flex justify-center items-center gap-6 text-sm">
