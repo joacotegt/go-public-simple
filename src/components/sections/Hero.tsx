@@ -14,11 +14,11 @@ export function Hero() {
         <img src="/lovable-uploads/0fac1cf9-825c-49b7-948d-924dcdbce49f.png" alt="Cronologis" className="h-16 mx-auto mb-8" />
         
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 max-w-4xl mx-auto">
-          Vende al Estado sin complicaciones
+          Nosotros nos encargamos de todo para que vendas al Estado
         </h1>
         
         <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-2xl mx-auto">
-          Nosotros nos encargamos de todo el proceso. Tú solo vendes y cobras en 30 días.
+          Tú solo tienes que seguir vendiendo tus productos. Del resto nos ocupamos nosotros: licitaciones, entregas y pagos en 30 días.
         </p>
         
         <Button size="lg" variant="hero" className="text-lg px-8 py-6" onClick={() => {
