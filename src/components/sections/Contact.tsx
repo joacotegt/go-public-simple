@@ -45,7 +45,7 @@ export function Contact() {
                 <Textarea id="message" placeholder="Cuéntanos sobre tu empresa y productos" />
               </div>
               
-              <Button variant="default" size="lg" className="w-full">Conversemos</Button>
+              <Button variant="default" size="lg" className="w-full">Contáctanos</Button>
             </form>
           </Card>
         </div>
