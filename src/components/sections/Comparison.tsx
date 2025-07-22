@@ -51,13 +51,13 @@ export function Comparison() {
         <div className="grid md:grid-cols-3 gap-6 mb-8">
           <div className="hidden md:block"></div>
           <div className="text-center">
-            <div className="inline-flex items-center px-6 py-3 rounded-full bg-destructive/10 border-2 border-destructive/20 shadow-sm">
+            <div className="inline-flex items-center px-4 py-2 bg-destructive/10 border-l-4 border-destructive rounded-md shadow-sm">
               <XIcon className="h-5 w-5 text-destructive mr-3" />
               <span className="font-bold text-lg text-destructive">Venta tradicional</span>
             </div>
           </div>
           <div className="text-center">
-            <div className="inline-flex items-center px-6 py-3 rounded-full bg-primary/10 border-2 border-primary/20 shadow-sm">
+            <div className="inline-flex items-center px-4 py-2 bg-primary/10 border-l-4 border-primary rounded-md shadow-sm">
               <CheckIcon className="h-5 w-5 text-primary mr-3" />
               <span className="font-bold text-lg text-primary">Con Cronologis</span>
             </div>
