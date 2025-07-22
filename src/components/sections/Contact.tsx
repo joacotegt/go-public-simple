@@ -4,19 +4,14 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
-
 export function Contact() {
-  return (
-    <section id="contact" className="py-20 relative overflow-hidden">
-      <div 
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `url(${sectionBg})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          opacity: 0.1
-        }}
-      />
+  return <section id="contact" className="py-20 relative overflow-hidden">
+      <div className="absolute inset-0 z-0" style={{
+      backgroundImage: `url(${sectionBg})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      opacity: 0.1
+    }} />
       
       <div className="container relative z-10 mx-auto px-4">
         <div className="max-w-xl mx-auto">
@@ -47,17 +42,13 @@ export function Contact() {
               
               <div>
                 <Label htmlFor="message">Mensaje</Label>
-                <Textarea 
-                  id="message" 
-                  placeholder="Cuéntanos sobre tu empresa y productos"
-                />
+                <Textarea id="message" placeholder="Cuéntanos sobre tu empresa y productos" />
               </div>
               
-              <Button variant="default" size="lg" className="w-full">Agendar demo</Button>
+              <Button variant="default" size="lg" className="w-full">Conversemos</Button>
             </form>
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
