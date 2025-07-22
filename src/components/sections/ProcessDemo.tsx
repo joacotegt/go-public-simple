@@ -56,9 +56,7 @@ export function ProcessDemo() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Cronologis en acción
             </h2>
-            <p className="text-lg text-muted-foreground">
-              Mira cómo procesamos una licitación real mientras haces scroll
-            </p>
+            <p className="text-lg text-muted-foreground">Mira cómo procesamos una licitación real </p>
           </div>
 
           {/* Notification Popup */}
