@@ -121,13 +121,13 @@ export function ProcessDemo() {
 
               const isActive = useTransform(
                 scrollYProgress,
-                [step.triggerPoint],
+                [step.triggerPoint - 0.05, step.triggerPoint],
                 [0, 1]
               );
 
               const isCurrent = useTransform(
                 scrollYProgress,
-                [step.triggerPoint - 0.05, step.triggerPoint + 0.05, step.triggerPoint + 0.15],
+                [step.triggerPoint - 0.05, step.triggerPoint, step.triggerPoint + 0.15],
                 [0, 1, 0]
               );
               
@@ -138,51 +138,55 @@ export function ProcessDemo() {
                   style={{ 
                     opacity: stepOpacity,
                     x: stepX,
-                    borderColor: useTransform(isActive, (value) => 
-                      value > 0.5 ? 'hsl(var(--primary) / 0.5)' : 'hsl(var(--border) / 0.3)'
-                    ),
-                    boxShadow: useTransform(isActive, (value) => 
-                      value > 0.5 ? '0 4px 12px -4px hsl(var(--primary) / 0.25)' : 'none'
-                    )
-                  }}
-                >
-                  <div className="flex items-start gap-4">
-                    <motion.div 
-                      className="rounded-full p-3 transition-colors duration-300"
-                      style={{
-                        backgroundColor: useTransform(isActive, (value) => 
-                          value > 0.5 ? 'hsl(var(--primary))' : 'hsl(var(--muted))'
-                        ),
-                        color: useTransform(isActive, (value) => 
-                          value > 0.5 ? 'hsl(var(--primary-foreground))' : 'hsl(var(--muted-foreground))'
-                        )
-                      }}
-                    >
-                      <Icon className="h-6 w-6" />
-                    </motion.div>
-                    
-                    <div className="flex-1">
-                      <div className="flex items-center gap-3 mb-2">
-                        <h3 className="text-lg font-semibold">{step.title}</h3>
-                        <motion.div 
-                          className="flex items-center gap-1 text-primary"
-                          style={{ 
-                            opacity: isCurrent,
-                            scale: useTransform(isCurrent, [0, 1], [0.8, 1])
-                          }}
-                        >
-                          <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                          <span className="text-sm">En proceso</span>
-                        </motion.div>
-                        <motion.div
-                          style={{ 
-                            opacity: useTransform(isActive, (value) => value > 0.8 ? 1 : 0),
-                            scale: useTransform(isActive, (value) => value > 0.8 ? 1 : 0.5)
-                          }}
-                        >
-                          <CheckCircle className="h-5 w-5 text-green-500" />
-                        </motion.div>
-                      </div>
+                     borderColor: useTransform(isActive, [0, 1], [
+                       'hsl(var(--border) / 0.3)', 
+                       'hsl(var(--primary) / 0.5)'
+                     ]),
+                     boxShadow: useTransform(isActive, [0, 1], [
+                       'none', 
+                       '0 4px 12px -4px hsl(var(--primary) / 0.25)'
+                     ])
+                   }}
+                 >
+                   <div className="flex items-start gap-4">
+                     <motion.div 
+                       className="rounded-full p-3 transition-colors duration-300"
+                       style={{
+                         backgroundColor: useTransform(isActive, [0, 1], [
+                           'hsl(var(--muted))', 
+                           'hsl(var(--primary))'
+                         ]),
+                         color: useTransform(isActive, [0, 1], [
+                           'hsl(var(--muted-foreground))', 
+                           'hsl(var(--primary-foreground))'
+                         ])
+                       }}
+                     >
+                       <Icon className="h-6 w-6" />
+                     </motion.div>
+                     
+                     <div className="flex-1">
+                       <div className="flex items-center gap-3 mb-2">
+                         <h3 className="text-lg font-semibold">{step.title}</h3>
+                         <motion.div 
+                           className="flex items-center gap-1 text-primary"
+                           style={{ 
+                             opacity: isCurrent,
+                             scale: useTransform(isCurrent, [0, 1], [0.8, 1])
+                           }}
+                         >
+                           <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+                           <span className="text-sm">En proceso</span>
+                         </motion.div>
+                         <motion.div
+                           style={{ 
+                             opacity: useTransform(isActive, [0, 0.8, 1], [0, 0, 1]),
+                             scale: useTransform(isActive, [0, 0.8, 1], [0.5, 0.5, 1])
+                           }}
+                         >
+                           <CheckCircle className="h-5 w-5 text-green-500" />
+                         </motion.div>
+                       </div>
                       
                       <p className="text-muted-foreground mb-1">{step.description}</p>
                       <p className="text-sm text-muted-foreground/80">{step.detail}</p>
