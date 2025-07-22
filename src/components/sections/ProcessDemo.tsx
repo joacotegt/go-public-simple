@@ -64,7 +64,7 @@ export function ProcessDemo() {
           {/* Notification Popup */}
           <motion.div className="mb-12 flex justify-center" style={{
           opacity: notificationOpacity,
-          y: useTransform(scrollYProgress, [0, 0.2], [-100, 0])
+          y: useTransform(scrollYProgress, [0, 0.2, 1], [-100, 0, 0])
         }}>
             <div className="bg-card border-2 border-primary/20 rounded-lg p-4 shadow-lg max-w-lg w-full">
               <div className="flex items-start gap-3">
@@ -142,17 +142,17 @@ export function ProcessDemo() {
           })}
           </div>
 
-          {/* Provider Dashboard Summary */}
+          {/* Provider Email Notification */}
           <motion.div className="mt-12 bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20 rounded-xl p-6" style={{
-          opacity: useTransform(scrollYProgress, [0.8, 1], [0, 1]),
-          y: useTransform(scrollYProgress, [0.8, 1], [20, 0])
+          opacity: useTransform(scrollYProgress, [0.7, 0.8, 1], [0, 1, 1]),
+          y: useTransform(scrollYProgress, [0.7, 0.8, 1], [20, 0, 0])
         }}>
             <div className="text-center">
               <h4 className="text-xl font-semibold mb-3 text-primary">
-                Panel del Proveedor
+                Notificación al Proveedor
               </h4>
               <p className="text-muted-foreground mb-4">
-                "Cronologis ha postulado por ti. Seguimos esperando resultado. No necesitas hacer nada."
+                "Se ha enviado un correo electrónico al proveedor confirmando que Cronologis postuló en su nombre. No requiere ninguna acción adicional."
               </p>
               
               <div className="flex justify-center items-center gap-6 text-sm">
