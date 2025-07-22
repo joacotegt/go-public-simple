@@ -48,12 +48,12 @@ export function Comparison() {
               {comparisonData.map((item, index) => (
                 <tr key={index} className="border-b">
                   <td className="py-4 font-medium">{item.aspect}</td>
-                  <td className="py-4 flex items-center">
-                    <XIcon className="h-5 w-5 text-destructive mr-2" />
+                  <td className="py-4 flex items-center text-destructive/90">
+                    <XIcon className="h-5 w-5 mr-2 flex-shrink-0" />
                     <span>{item.traditional}</span>
                   </td>
-                  <td className="py-4 flex items-center">
-                    <CheckIcon className="h-5 w-5 text-primary mr-2" />
+                  <td className="py-4 flex items-center text-primary">
+                    <CheckIcon className="h-5 w-5 mr-2 flex-shrink-0" />
                     <span>{item.cronologis}</span>
                   </td>
                 </tr>
