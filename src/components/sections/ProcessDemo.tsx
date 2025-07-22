@@ -36,19 +36,19 @@ export function ProcessDemo() {
     description: "Oferta generada automáticamente",
     detail: "1.500 unidades, $2.450 c/u, entrega en 5 días",
     icon: FileText,
-    triggerPoint: 0.55
+    triggerPoint: 0.5
   }, {
     id: 5,
     title: "Postulación exitosa",
     description: "Oferta enviada a Hospital San Felipe",
     detail: "Esperando resultados de adjudicación",
     icon: CheckCircle,
-    triggerPoint: 0.7
+    triggerPoint: 0.6
   }];
 
   // Transform scroll progress to step progress
-  const notificationOpacity = useTransform(scrollYProgress, [0, 0.2], [0, 1]);
-  const progressWidth = useTransform(scrollYProgress, [0.1, 0.7], [0, 100]);
+  const notificationOpacity = useTransform(scrollYProgress, [0, 0.2, 0.7], [0, 1, 1]);
+  const progressWidth = useTransform(scrollYProgress, [0.1, 0.6, 0.7], [0, 100, 100]);
   return <section ref={containerRef} className="py-24 bg-gradient-to-br from-background to-muted/20 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
