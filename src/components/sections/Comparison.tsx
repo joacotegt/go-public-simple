@@ -42,13 +42,13 @@ export function Comparison() {
           <div className="text-center">
             <div className="inline-flex items-center px-4 py-2 bg-destructive/10 border-l-4 border-destructive rounded-md shadow-sm">
               
-              <span className="font-bold text-lg text-destructive">Venta tradicional</span>
+              <span className="text-lg font-bold text-slate-950">Venta tradicional</span>
             </div>
           </div>
           <div className="text-center">
             <div className="inline-flex items-center px-4 py-2 bg-primary/10 border-l-4 border-primary rounded-md shadow-sm">
               
-              <span className="font-bold text-lg text-primary">Con Cronologis</span>
+              <span className="font-bold text-lg text-slate-950">Con Cronologis</span>
             </div>
           </div>
         </div>
@@ -87,7 +87,7 @@ export function Comparison() {
         <div className="text-center mt-12">
           <div className="inline-flex items-center px-6 py-3 bg-primary/5 border border-primary/20 rounded-lg">
             <CheckIcon className="h-5 w-5 text-primary mr-2" />
-            <span className="text-primary font-semibold">Simplifica tu proceso de ventas al Estado</span>
+            <span className="text-primary font-semibold">Tú solo vendes</span>
           </div>
         </div>
       </div>
