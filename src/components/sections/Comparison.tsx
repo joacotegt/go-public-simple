@@ -42,13 +42,13 @@ export function Comparison() {
           <div className="text-center">
             <div className="inline-flex items-center px-4 py-2 bg-destructive/10 border-l-4 border-destructive rounded-md shadow-sm">
               
-              <span className="text-lg font-bold text-slate-950">Venta tradicional</span>
+              <span className="text-lg font-bold text-rose-600">Venta tradicional</span>
             </div>
           </div>
           <div className="text-center">
             <div className="inline-flex items-center px-4 py-2 bg-primary/10 border-l-4 border-primary rounded-md shadow-sm">
               
-              <span className="font-bold text-lg text-slate-950">Con Cronologis</span>
+              <span className="font-bold text-lg text-blue-600">Con Cronologis</span>
             </div>
           </div>
         </div>
