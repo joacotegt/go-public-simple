@@ -47,44 +47,61 @@ export function Comparison() {
           Descubre por qué vender al Estado es más sencillo con nuestra plataforma
         </p>
         
-        <div className="grid md:grid-cols-3 gap-4 mb-8">
-          <div></div>
+        {/* Column Headers */}
+        <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="hidden md:block"></div>
           <div className="text-center">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-destructive/10 border border-destructive/20">
-              <XIcon className="h-5 w-5 text-destructive mr-2" />
+            <div className="inline-flex items-center px-6 py-3 rounded-full bg-destructive/10 border-2 border-destructive/20 shadow-sm">
+              <XIcon className="h-5 w-5 text-destructive mr-3" />
               <span className="font-bold text-lg text-destructive">Venta tradicional</span>
             </div>
           </div>
           <div className="text-center">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
-              <CheckIcon className="h-5 w-5 text-primary mr-2" />
+            <div className="inline-flex items-center px-6 py-3 rounded-full bg-primary/10 border-2 border-primary/20 shadow-sm">
+              <CheckIcon className="h-5 w-5 text-primary mr-3" />
               <span className="font-bold text-lg text-primary">Con Cronologis</span>
             </div>
           </div>
         </div>
         
-        <div className="grid grid-cols-1 gap-8">
+        {/* Comparison Table */}
+        <div className="space-y-4">
           {comparisonData.map((item, index) => (
-            <div key={index} className="grid md:grid-cols-3 gap-4">
-              <Card className="p-6 md:p-8 flex items-center justify-center text-center bg-accent/5 border-accent/20">
-                <h3 className="font-semibold text-lg">{item.aspect}</h3>
+            <div key={index} className="grid md:grid-cols-3 gap-4 items-stretch">
+              {/* Aspect Column */}
+              <Card className="p-6 md:p-8 flex items-center justify-center text-center bg-gradient-to-br from-accent/5 to-accent/10 border-accent/30 shadow-sm">
+                <h3 className="font-semibold text-lg text-foreground leading-tight">{item.aspect}</h3>
               </Card>
               
-              <Card className="p-6 md:p-8 bg-destructive/5 border-destructive/20">
-                <div className="flex items-center mb-3">
-                  <XIcon className="h-6 w-6 text-destructive mr-3 flex-shrink-0" />
+              {/* Traditional Column */}
+              <Card className="p-6 md:p-8 bg-gradient-to-br from-destructive/5 to-destructive/10 border-destructive/20 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-start mb-4">
+                  <div className="p-1 rounded-full bg-destructive/10 mr-3 flex-shrink-0 mt-1">
+                    <XIcon className="h-4 w-4 text-destructive" />
+                  </div>
                 </div>
-                <p className="text-muted-foreground">{item.traditional}</p>
+                <p className="text-foreground font-medium leading-relaxed">{item.traditional}</p>
               </Card>
               
-              <Card className="p-6 md:p-8 bg-primary/5 border-primary/20">
-                <div className="flex items-center mb-3">
-                  <CheckIcon className="h-6 w-6 text-primary mr-3 flex-shrink-0" />
+              {/* Cronologis Column */}
+              <Card className="p-6 md:p-8 bg-gradient-to-br from-primary/5 to-primary/10 border-primary/20 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-start mb-4">
+                  <div className="p-1 rounded-full bg-primary/10 mr-3 flex-shrink-0 mt-1">
+                    <CheckIcon className="h-4 w-4 text-primary" />
+                  </div>
                 </div>
-                <p className="text-muted-foreground">{item.cronologis}</p>
+                <p className="text-foreground font-medium leading-relaxed">{item.cronologis}</p>
               </Card>
             </div>
           ))}
+        </div>
+        
+        {/* Call to Action */}
+        <div className="text-center mt-12">
+          <div className="inline-flex items-center px-6 py-3 bg-primary/5 border border-primary/20 rounded-lg">
+            <CheckIcon className="h-5 w-5 text-primary mr-2" />
+            <span className="text-primary font-semibold">Simplifica tu proceso de ventas al Estado</span>
+          </div>
         </div>
       </div>
     </section>
