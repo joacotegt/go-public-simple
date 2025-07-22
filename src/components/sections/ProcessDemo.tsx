@@ -152,7 +152,7 @@ export function ProcessDemo() {
                 Correo al Proveedor
               </h4>
               <p className="text-muted-foreground mb-4">
-                "Estimado proveedor, hemos postulado en su nombre a la licitación 'Compra de guantes de nitrilo - Hospital San Felipe'. Su oferta ha sido enviada exitosamente. Le mantendremos informado sobre el resultado."
+                "Cronologis ha postulado en la licitación 'Compra de 1500 unidades de guantes de nitrilo - Hospital San Felipe' por guantes de nitrilo a $2.450 c/u con entrega en 5 días. Esperando resultados. Le mantendremos informado."
               </p>
               
               <div className="flex justify-center items-center gap-6 text-sm">
