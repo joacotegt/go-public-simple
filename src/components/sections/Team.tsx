@@ -1,6 +1,5 @@
 export function Team() {
-  return (
-    <section className="py-20 bg-muted">
+  return <section className="py-20 bg-muted">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">
           Equipo con experiencia
@@ -20,9 +19,7 @@ export function Team() {
           
           <div className="bg-background p-8 rounded-lg shadow-md">
             <h3 className="font-bold text-lg mb-2">Especialistas en datos</h3>
-            <p className="text-muted-foreground">
-              Fundadores de Datamind con más de 15 años en inteligencia de negocios y análisis avanzado de datos.
-            </p>
+            <p className="text-muted-foreground">Fundadores de empresas con exits con más de 15 años en inteligencia de negocios y análisis avanzado de datos.</p>
           </div>
           
           <div className="bg-background p-8 rounded-lg shadow-md">
@@ -40,6 +37,5 @@ export function Team() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
