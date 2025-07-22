@@ -16,7 +16,7 @@ export function Header() {
           demoSection?.scrollIntoView({
             behavior: 'smooth'
           });
-        }}>Agenda una reunión</Button>
+        }}>Contáctanos</Button>
         </div>
       </div>
     </header>;

@@ -26,7 +26,7 @@ export function Hero() {
         demoSection?.scrollIntoView({
           behavior: 'smooth'
         });
-      }}>Agenda una reunión</Button>
+      }}>Contáctanos</Button>
       </div>
     </section>;
 }
