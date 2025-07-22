@@ -15,21 +15,21 @@ const features = [
     title: "Gestión integral de postulaciones",
     description: "Nos encargamos de todo el papeleo, requisitos técnicos y cumplimiento normativo de cada licitación.",
     icon: FileCheck,
-    color: "text-accent"
+    color: "text-primary"
   },
   {
     number: "03",
     title: "Distribución nacional",
     description: "Coordinamos las entregas en todo Chile, adaptándonos a los requisitos específicos de cada cliente público.",
     icon: TruckIcon,
-    color: "text-secondary"
+    color: "text-primary"
   },
   {
     number: "04",
     title: "Gestión financiera sin riesgos",
     description: "Asumimos el 100% del riesgo financiero y te pagamos en 30 días, sin importar cuándo pague el Estado.",
     icon: BanknoteIcon,
-    color: "text-warning"
+    color: "text-primary"
   }
 ];
 
