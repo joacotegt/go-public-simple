@@ -47,6 +47,16 @@ export function Comparison() {
           Descubre por qué vender al Estado es más sencillo con nuestra plataforma
         </p>
         
+        <div className="grid md:grid-cols-3 gap-4 mb-8">
+          <div></div>
+          <div className="text-center">
+            <h3 className="font-bold text-lg mb-4 text-destructive">Venta tradicional</h3>
+          </div>
+          <div className="text-center">
+            <h3 className="font-bold text-lg mb-4 text-primary">Con Cronologis</h3>
+          </div>
+        </div>
+        
         <div className="grid grid-cols-1 gap-8">
           {comparisonData.map((item, index) => (
             <div key={index} className="grid md:grid-cols-3 gap-4">
@@ -57,17 +67,15 @@ export function Comparison() {
               <Card className="p-6 md:p-8 bg-destructive/5 border-destructive/20">
                 <div className="flex items-center mb-3">
                   <XIcon className="h-6 w-6 text-destructive mr-3 flex-shrink-0" />
-                  <h4 className="font-semibold">Venta tradicional</h4>
                 </div>
-                <p className="text-muted-foreground ml-9">{item.traditional}</p>
+                <p className="text-muted-foreground">{item.traditional}</p>
               </Card>
               
               <Card className="p-6 md:p-8 bg-primary/5 border-primary/20">
                 <div className="flex items-center mb-3">
                   <CheckIcon className="h-6 w-6 text-primary mr-3 flex-shrink-0" />
-                  <h4 className="font-semibold">Con Cronologis</h4>
                 </div>
-                <p className="text-muted-foreground ml-9">{item.cronologis}</p>
+                <p className="text-muted-foreground">{item.cronologis}</p>
               </Card>
             </div>
           ))}
