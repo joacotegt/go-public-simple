@@ -63,22 +63,22 @@ export function Comparison() {
               
               {/* Traditional Column */}
               <Card className="p-6 md:p-8 bg-gradient-to-br from-destructive/5 to-destructive/10 border-destructive/20 shadow-sm hover:shadow-md transition-shadow">
-                <div className="flex items-start mb-4">
+                <div className="flex items-start">
                   <div className="p-1 rounded-full bg-destructive/10 mr-3 flex-shrink-0 mt-1">
                     <XIcon className="h-4 w-4 text-destructive" />
                   </div>
+                  <p className="text-foreground font-medium leading-relaxed">{item.traditional}</p>
                 </div>
-                <p className="text-foreground font-medium leading-relaxed">{item.traditional}</p>
               </Card>
               
               {/* Cronologis Column */}
               <Card className="p-6 md:p-8 bg-gradient-to-br from-primary/5 to-primary/10 border-primary/20 shadow-sm hover:shadow-md transition-shadow">
-                <div className="flex items-start mb-4">
+                <div className="flex items-start">
                   <div className="p-1 rounded-full bg-primary/10 mr-3 flex-shrink-0 mt-1">
                     <CheckIcon className="h-4 w-4 text-primary" />
                   </div>
+                  <p className="text-foreground font-medium leading-relaxed">{item.cronologis}</p>
                 </div>
-                <p className="text-foreground font-medium leading-relaxed">{item.cronologis}</p>
               </Card>
             </div>)}
         </div>
