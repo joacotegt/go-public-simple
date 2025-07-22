@@ -1,4 +1,6 @@
 import { CheckIcon, XIcon } from "lucide-react";
+import { Card } from "@/components/ui/card";
+import sectionBg from "@/assets/section-bg.jpg";
 
 const comparisonData = [
   {
@@ -25,41 +27,50 @@ const comparisonData = [
 
 export function Comparison() {
   return (
-    <section className="py-20">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+    <section className="py-24 relative overflow-hidden">
+      <div 
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: `url(${sectionBg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          opacity: 0.1
+        }}
+      />
+      
+      <div className="container relative z-10 mx-auto px-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
           La diferencia Cronologis
         </h2>
         
-        <div className="overflow-x-auto">
-          <table className="w-full">
-            <thead>
-              <tr className="border-b">
-                <th className="pb-4 text-left"></th>
-                <th className="pb-4 text-left">
-                  <div className="text-xl font-semibold text-muted-foreground">Venta tradicional</div>
-                </th>
-                <th className="pb-4 text-left">
-                  <div className="text-xl font-semibold text-primary">Con Cronologis</div>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {comparisonData.map((item, index) => (
-                <tr key={index} className="border-b">
-                  <td className="py-4 font-medium">{item.aspect}</td>
-                  <td className="py-4 flex items-center text-destructive/90">
-                    <XIcon className="h-5 w-5 mr-2 flex-shrink-0" />
-                    <span>{item.traditional}</span>
-                  </td>
-                  <td className="py-4 flex items-center text-primary">
-                    <CheckIcon className="h-5 w-5 mr-2 flex-shrink-0" />
-                    <span>{item.cronologis}</span>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+        <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-16">
+          Descubre por qué vender al Estado es más sencillo con nuestra plataforma
+        </p>
+        
+        <div className="grid grid-cols-1 gap-8">
+          {comparisonData.map((item, index) => (
+            <div key={index} className="grid md:grid-cols-3 gap-4">
+              <Card className="p-6 md:p-8 flex items-center justify-center text-center bg-accent/5 border-accent/20">
+                <h3 className="font-semibold text-lg">{item.aspect}</h3>
+              </Card>
+              
+              <Card className="p-6 md:p-8 bg-destructive/5 border-destructive/20">
+                <div className="flex items-center mb-3">
+                  <XIcon className="h-6 w-6 text-destructive mr-3 flex-shrink-0" />
+                  <h4 className="font-semibold">Venta tradicional</h4>
+                </div>
+                <p className="text-muted-foreground ml-9">{item.traditional}</p>
+              </Card>
+              
+              <Card className="p-6 md:p-8 bg-primary/5 border-primary/20">
+                <div className="flex items-center mb-3">
+                  <CheckIcon className="h-6 w-6 text-primary mr-3 flex-shrink-0" />
+                  <h4 className="font-semibold">Con Cronologis</h4>
+                </div>
+                <p className="text-muted-foreground ml-9">{item.cronologis}</p>
+              </Card>
+            </div>
+          ))}
         </div>
       </div>
     </section>
