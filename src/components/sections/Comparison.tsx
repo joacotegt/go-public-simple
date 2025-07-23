@@ -40,13 +40,13 @@ export function Comparison() {
         <div className="grid md:grid-cols-3 gap-6 mb-8">
           <div className="hidden md:block"></div>
           <div className="text-center">
-            <div className="inline-flex items-center px-4 py-2 bg-destructive/10 border-l-4 border-destructive rounded-md shadow-sm">
+            <div className="inline-flex items-center px-4 py-2 bg-destructive/10 border-l-4 border-muted rounded-md shadow-sm">
               
               <span className="text-rose-600 text-2xl font-semibold">Venta tradicional</span>
             </div>
           </div>
           <div className="text-center">
-            <div className="inline-flex items-center px-4 py-2 bg-primary/10 border-l-4 border-primary rounded-md shadow-sm">
+            <div className="inline-flex items-center px-4 py-2 bg-primary/10 border-l-4 border-muted rounded-md shadow-sm">
               
               <span className="text-blue-600 text-2xl font-semibold">Con Cronologis</span>
             </div>
