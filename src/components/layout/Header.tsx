@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "@/components/ui/theme-toggle";
 export function Header() {
   return <header className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm text-primary-foreground">
       <div className="container mx-auto px-4">
@@ -12,15 +11,12 @@ export function Header() {
             <a href="#contact" className="text-primary-foreground/90 hover:text-primary-foreground">Contacto</a>
           </nav>
           
-          <div className="flex items-center gap-2">
-            <ThemeToggle />
-            <Button variant="hero" size="sm" onClick={() => {
-            const demoSection = document.getElementById('contact');
-            demoSection?.scrollIntoView({
-              behavior: 'smooth'
-            });
-          }}>Contáctanos</Button>
-          </div>
+          <Button variant="hero" size="sm" onClick={() => {
+          const demoSection = document.getElementById('contact');
+          demoSection?.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }}>Contáctanos</Button>
         </div>
       </div>
     </header>;
