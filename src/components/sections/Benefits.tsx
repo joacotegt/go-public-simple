@@ -1,5 +1,4 @@
 import { CheckCircle2 } from "lucide-react";
-import textureBg from "@/assets/texture-bg.jpg";
 
 const benefits = [
   {
@@ -18,16 +17,8 @@ const benefits = [
 
 export function Benefits() {
   return (
-    <section className="py-20 bg-secondary relative overflow-hidden">
-      <div 
-        className="absolute inset-0 z-0 opacity-3 blur-sm" 
-        style={{
-          backgroundImage: `url(${textureBg})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}
-      />
-      <div className="container relative z-10 mx-auto px-4">
+    <section className="py-20 bg-secondary">
+      <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">
           Vende más, sin complicaciones
         </h2>

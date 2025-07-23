@@ -1,5 +1,3 @@
-import textureBg from "@/assets/texture-bg.jpg";
-
 export function Brands() {
   const brands = [
     "3M", "Samsung", "HP", "Canon", "Epson", 
@@ -7,16 +5,8 @@ export function Brands() {
   ];
 
   return (
-    <section className="py-20 bg-background relative overflow-hidden">
-      <div 
-        className="absolute inset-0 z-0 opacity-3 blur-sm" 
-        style={{
-          backgroundImage: `url(${textureBg})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}
-      />
-      <div className="container relative z-10 mx-auto px-4">
+    <section className="py-20 bg-background">
+      <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Marcas que distribuimos
