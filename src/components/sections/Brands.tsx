@@ -51,14 +51,14 @@ export function Brands() {
           </h2>
         </div>
         
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
           {brands.map((brand, index) => (
-            <div key={index} className="text-center p-4">
-              <div className="bg-muted rounded-lg p-6 h-20 flex items-center justify-center mb-2">
+            <div key={index} className="group">
+              <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 h-24 overflow-hidden">
                 <img 
                   src={brand.logo} 
                   alt={brand.name} 
-                  className="max-h-full max-w-full object-contain"
+                  className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>
