@@ -39,6 +39,42 @@ export function Brands() {
     {
       name: "Motorola",
       logo: "/lovable-uploads/ffe79910-0601-4c8d-a667-ce344273c910.png"
+    },
+    {
+      name: "AllTest",
+      logo: "/lovable-uploads/69518aa0-cf30-4f68-8ffe-2a107838e3e0.png"
+    },
+    {
+      name: "Virutex",
+      logo: "/lovable-uploads/fe923ee6-7bf3-4bca-aa23-46df01b104e5.png"
+    },
+    {
+      name: "Kensington",
+      logo: "/lovable-uploads/79393818-6af8-4116-8225-93eadc14a116.png"
+    },
+    {
+      name: "Solventum",
+      logo: "/lovable-uploads/db879648-7f60-477d-a239-db56608ff4f6.png"
+    },
+    {
+      name: "Cranberry",
+      logo: "/lovable-uploads/f3677c23-79dd-4b1c-a166-c979c8c24d68.png"
+    },
+    {
+      name: "Babysec",
+      logo: "/lovable-uploads/867a67a6-60ec-490d-b3c4-8e7254e041c7.png"
+    },
+    {
+      name: "Targus",
+      logo: "/lovable-uploads/2e840ac8-a967-4386-808b-78a6baeb98c3.png"
+    },
+    {
+      name: "BIC",
+      logo: "/lovable-uploads/4e9058e8-a6c2-46da-a784-39e64a18f54b.png"
+    },
+    {
+      name: "NIPRO",
+      logo: "/lovable-uploads/fdf14120-1a09-46bb-80a3-d4d876b57716.png"
     }
   ];
 
