@@ -98,14 +98,18 @@ export function ProcessDemo() {
             const stepX = useTransform(scrollYProgress, [step.triggerPoint - 0.1, step.triggerPoint, 0.7], [-50, 0, 0]);
             const isActive = useTransform(scrollYProgress, [step.triggerPoint - 0.05, step.triggerPoint, 0.7], [0, 1, 1]);
             const isCurrent = useTransform(scrollYProgress, [step.triggerPoint - 0.05, step.triggerPoint, step.triggerPoint + 0.1, 0.7], [0, 1, 0, 0]);
-            return <motion.div key={step.id} className="relative bg-card border rounded-xl p-6 transition-all duration-500 border-border/30" style={{
-              opacity: stepOpacity,
-              x: stepX,
-              borderColor: useTransform(isActive, [0, 1], ['hsl(var(--border) / 0.3)', 'hsl(var(--primary) / 0.5)']),
-              boxShadow: useTransform(isActive, [0, 1], ['none', '0 4px 12px -4px hsl(var(--primary) / 0.25)'])
-            }}>
+            return <motion.div key={step.id} className="group relative">
+              <motion.div 
+                className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 p-6" 
+                style={{
+                  opacity: stepOpacity,
+                  x: stepX,
+                  borderColor: useTransform(isActive, [0, 1], ['transparent', 'hsl(var(--primary) / 0.5)']),
+                  boxShadow: useTransform(isActive, [0, 1], ['0 4px 6px -1px rgb(0 0 0 / 0.1)', '0 10px 25px -3px hsl(var(--primary) / 0.25)'])
+                }}
+              >
                    <div className="flex items-start gap-4">
-                     <motion.div className="rounded-full p-3 transition-colors duration-300" style={{
+                     <motion.div className="rounded-full p-3 transition-all duration-300 group-hover:scale-105" style={{
                   backgroundColor: useTransform(isActive, [0, 1], ['hsl(var(--muted))', 'hsl(var(--primary))']),
                   color: useTransform(isActive, [0, 1], ['hsl(var(--muted-foreground))', 'hsl(var(--primary-foreground))'])
                 }}>
@@ -136,7 +140,8 @@ export function ProcessDemo() {
                   </div>
                   
                   {index < steps.length - 1}
-                </motion.div>;
+                </motion.div>
+              </motion.div>;
           })}
           </div>
 
