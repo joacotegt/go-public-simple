@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { Bell, Brain, Package, FileText, CheckCircle, Clock, DollarSign } from "lucide-react";
+import { Bell, Brain, Package, FileText, CheckCircle, Clock, DollarSign, Mail } from "lucide-react";
 export function ProcessDemo() {
   const containerRef = useRef<HTMLElement>(null);
   const {
@@ -148,11 +148,16 @@ export function ProcessDemo() {
           </div>
 
           {/* Provider Email Notification */}
-          <motion.div className="mt-12 bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20 rounded-xl p-6" style={{
+          <motion.div className="mt-12 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 p-8" style={{
           opacity: useTransform(scrollYProgress, [0.6, 0.7, 1], [0, 1, 1]),
           y: useTransform(scrollYProgress, [0.6, 0.7, 1], [20, 0, 0])
         }}>
             <div className="text-center">
+              <div className="flex justify-center mb-4">
+                <div className="bg-blue-500 rounded-full p-4">
+                  <Mail className="h-8 w-8 text-white" />
+                </div>
+              </div>
               <h4 className="text-xl font-semibold mb-3 text-primary">
                 Correo al Proveedor
               </h4>
