@@ -57,12 +57,12 @@ export function Comparison() {
         <div className="space-y-4">
           {comparisonData.map((item, index) => <div key={index} className="grid md:grid-cols-3 gap-4 items-stretch">
               {/* Aspect Column */}
-              <Card className="p-6 md:p-8 flex items-center justify-center text-center bg-gradient-to-br from-accent/5 to-accent/10 border-accent/30 shadow-sm">
+              <Card className="p-6 md:p-8 flex items-center justify-center text-center bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-accent/30">
                 <h3 className="font-semibold text-lg text-foreground leading-tight">{item.aspect}</h3>
               </Card>
               
               {/* Traditional Column */}
-              <Card className="p-6 md:p-8 bg-gradient-to-br from-destructive/5 to-destructive/10 border-destructive/20 shadow-sm hover:shadow-md transition-shadow">
+              <Card className="p-6 md:p-8 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-destructive/20">
                 <div className="flex items-start">
                   <div className="p-1 rounded-full bg-destructive/10 mr-3 flex-shrink-0 mt-1">
                     <XIcon className="h-4 w-4 text-destructive" />
@@ -72,7 +72,7 @@ export function Comparison() {
               </Card>
               
               {/* Cronologis Column */}
-              <Card className="p-6 md:p-8 bg-gradient-to-br from-primary/5 to-primary/10 border-primary/20 shadow-sm hover:shadow-md transition-shadow">
+              <Card className="p-6 md:p-8 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 border-primary/20">
                 <div className="flex items-start">
                   <div className="p-1 rounded-full bg-primary/10 mr-3 flex-shrink-0 mt-1">
                     <CheckIcon className="h-4 w-4 text-primary" />
