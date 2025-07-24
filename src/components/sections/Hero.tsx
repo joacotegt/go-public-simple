@@ -3,7 +3,7 @@ import heroBg from "@/assets/hero-bg.jpg";
 export function Hero() {
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0" style={{
-      backgroundImage: `url(${heroBg})`,
+      backgroundImage: `url(/lovable-uploads/8207f36a-55a4-4739-af14-a4debfc94418.png)`,
       backgroundSize: 'cover',
       backgroundPosition: 'center'
     }}>
