@@ -148,7 +148,7 @@ export function ProcessDemo() {
           </div>
 
           {/* Provider Email Notification */}
-          <motion.div className="mt-12 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 p-8" style={{
+          <motion.div className="mt-12 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 p-8 border-2 border-blue-200" style={{
           opacity: useTransform(scrollYProgress, [0.6, 0.7, 1], [0, 1, 1]),
           y: useTransform(scrollYProgress, [0.6, 0.7, 1], [20, 0, 0])
         }}>
