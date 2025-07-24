@@ -64,14 +64,16 @@ export function ProcessDemo() {
           opacity: notificationOpacity,
           y: useTransform(scrollYProgress, [0, 0.2, 1], [-100, 0, 0])
         }}>
-            <div className="bg-card border-2 border-primary/20 rounded-lg p-4 shadow-lg max-w-lg w-full">
-              <div className="flex items-start gap-3">
-                <Bell className="h-6 w-6 text-primary mt-1 animate-pulse" />
+            <div className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 p-8 max-w-2xl w-full border-2 border-red-200">
+              <div className="flex items-start gap-6">
+                <div className="bg-red-500 rounded-full p-4 animate-bounce">
+                  <Bell className="h-8 w-8 text-white animate-pulse" />
+                </div>
                 <div className="flex-1">
-                  <div className="font-semibold text-sm text-primary mb-1">
+                  <div className="font-bold text-xl text-red-600 mb-3">
                     Nueva licitación detectada en Mercado Público
                   </div>
-                  <div className="text-sm text-muted-foreground">
+                  <div className="text-lg text-muted-foreground">
                     "Compra de 1500 unidades de guantes de nitrilo – Hospital San Felipe (RM)"
                   </div>
                 </div>
