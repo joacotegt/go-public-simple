@@ -75,6 +75,10 @@ export function Brands() {
     {
       name: "NIPRO",
       logo: "/lovable-uploads/fdf14120-1a09-46bb-80a3-d4d876b57716.png"
+    },
+    {
+      name: "Lenovo",
+      logo: "/lovable-uploads/61add61a-1011-4b6a-8a99-5db58b63fc45.png"
     }
   ];
 
