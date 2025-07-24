@@ -149,8 +149,8 @@ export function ProcessDemo() {
 
           {/* Provider Email Notification */}
           <motion.div className="mt-12 bg-gradient-to-r from-primary/5 to-primary/10 border border-primary/20 rounded-xl p-6" style={{
-          opacity: useTransform(scrollYProgress, [0.7, 0.8, 1], [0, 1, 1]),
-          y: useTransform(scrollYProgress, [0.7, 0.8, 1], [20, 0, 0])
+          opacity: useTransform(scrollYProgress, [0.6, 0.7, 1], [0, 1, 1]),
+          y: useTransform(scrollYProgress, [0.6, 0.7, 1], [20, 0, 0])
         }}>
             <div className="text-center">
               <h4 className="text-xl font-semibold mb-3 text-primary">
