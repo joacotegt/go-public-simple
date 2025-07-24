@@ -8,7 +8,7 @@ import { Coverage } from "@/components/sections/Coverage";
 import { PublicTrust } from "@/components/sections/PublicTrust";
 import { Brands } from "@/components/sections/Brands";
 import { Testimonials } from "@/components/sections/Testimonials";
-import { Team } from "@/components/sections/Team";
+
 import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
@@ -27,7 +27,7 @@ const Index = () => {
         <Comparison />
         <PublicTrust />
         <Testimonials />
-        <Team />
+        
         <Contact />
       </main>
       <Footer />
