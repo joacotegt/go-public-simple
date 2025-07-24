@@ -15,40 +15,40 @@ export function ProcessDemo() {
     description: "Nueva licitación detectada en Mercado Público",
     detail: "Compra de 1500 unidades de guantes de nitrilo – Hospital San Felipe (RM)",
     icon: Bell,
-    triggerPoint: 0.25
+    triggerPoint: 0.15
   }, {
     id: 2,
     title: "Análisis de requisitos",
     description: "Analizando requisitos técnicos...",
     detail: "Revisión de bases técnicas y condiciones comerciales",
     icon: Brain,
-    triggerPoint: 0.4
+    triggerPoint: 0.3
   }, {
     id: 3,
     title: "Matching de productos",
     description: "Producto compatible localizado",
     detail: "Guantes de nitrilo (Stock disponible entre proveedores)",
     icon: Package,
-    triggerPoint: 0.55
+    triggerPoint: 0.45
   }, {
     id: 4,
     title: "Generación de propuesta",
     description: "Oferta generada automáticamente",
     detail: "1.500 unidades, $2.450 c/u, entrega en 5 días",
     icon: FileText,
-    triggerPoint: 0.7
+    triggerPoint: 0.6
   }, {
     id: 5,
     title: "Postulación exitosa",
     description: "Oferta enviada a Hospital San Felipe",
     detail: "Esperando resultados de adjudicación",
     icon: CheckCircle,
-    triggerPoint: 0.85
+    triggerPoint: 0.75
   }];
 
   // Transform scroll progress to step progress
   const notificationOpacity = useTransform(scrollYProgress, [0, 0.2, 0.7], [0, 1, 1]);
-  const progressWidth = useTransform(scrollYProgress, [0.25, 0.85, 0.95], [0, 100, 100]);
+  const progressWidth = useTransform(scrollYProgress, [0.15, 0.75, 0.85], [0, 100, 100]);
   return <section ref={containerRef} className="py-24 bg-gradient-to-br from-background to-muted/20 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
@@ -95,11 +95,11 @@ export function ProcessDemo() {
             {steps.map((step, index) => {
             const Icon = step.icon;
 
-            // Mantener completamente visible después del 85%
-            const stepOpacity = useTransform(scrollYProgress, [step.triggerPoint - 0.12, step.triggerPoint, 0.85], [0, 1, 1]);
-            const stepX = useTransform(scrollYProgress, [step.triggerPoint - 0.12, step.triggerPoint, 0.85], [-50, 0, 0]);
-            const isActive = useTransform(scrollYProgress, [step.triggerPoint - 0.08, step.triggerPoint, 0.85], [0, 1, 1]);
-            const isCurrent = useTransform(scrollYProgress, [step.triggerPoint - 0.08, step.triggerPoint, step.triggerPoint + 0.12, 0.85], [0, 1, 0, 0]);
+            // Mantener completamente visible después del 75%
+            const stepOpacity = useTransform(scrollYProgress, [step.triggerPoint - 0.1, step.triggerPoint, 0.75], [0, 1, 1]);
+            const stepX = useTransform(scrollYProgress, [step.triggerPoint - 0.1, step.triggerPoint, 0.75], [-50, 0, 0]);
+            const isActive = useTransform(scrollYProgress, [step.triggerPoint - 0.05, step.triggerPoint, 0.75], [0, 1, 1]);
+            const isCurrent = useTransform(scrollYProgress, [step.triggerPoint - 0.05, step.triggerPoint, step.triggerPoint + 0.1, 0.75], [0, 1, 0, 0]);
             return <motion.div key={step.id} className="group relative">
               <motion.div 
                 className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 p-6" 
