@@ -19,6 +19,7 @@ const Index = () => {
       <Header />
       <main className="bg-background text-foreground">
         <Hero />
+        <Brands />
         <Benefits />
         <Stats />
         <HowItWorks />
@@ -26,7 +27,6 @@ const Index = () => {
         <Comparison />
         <Coverage />
         <PublicTrust />
-        <Brands />
         <Testimonials />
         <Team />
         <Contact />
