@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Bell, Brain, Package, FileText, CheckCircle, Clock, DollarSign } from "lucide-react";
+import heroBg from "@/assets/hero-bg.jpg";
 export function ProcessDemo() {
   const containerRef = useRef<HTMLElement>(null);
   const {
@@ -49,8 +50,15 @@ export function ProcessDemo() {
   // Transform scroll progress to step progress
   const notificationOpacity = useTransform(scrollYProgress, [0, 0.2, 0.7], [0, 1, 1]);
   const progressWidth = useTransform(scrollYProgress, [0.1, 0.6, 0.7], [0, 100, 100]);
-  return <section ref={containerRef} className="py-24 bg-gradient-to-br from-background to-muted/20 overflow-hidden">
-      <div className="container mx-auto px-4">
+  return <section ref={containerRef} className="relative py-24 overflow-hidden">
+      <div className="absolute inset-0 z-0" style={{
+        backgroundImage: `url(${heroBg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}>
+        <div className="absolute inset-0 bg-primary/80" />
+      </div>
+      <div className="container relative z-10 mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
