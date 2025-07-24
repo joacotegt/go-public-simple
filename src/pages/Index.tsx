@@ -6,7 +6,6 @@ import { ProcessDemo } from "@/components/sections/ProcessDemo";
 import { Coverage } from "@/components/sections/Coverage";
 import { PublicTrust } from "@/components/sections/PublicTrust";
 import { Brands } from "@/components/sections/Brands";
-import { Testimonials } from "@/components/sections/Testimonials";
 
 import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/layout/Footer";
@@ -24,7 +23,6 @@ const Index = () => {
         <HowItWorks />
         <ProcessDemo />
         <PublicTrust />
-        <Testimonials />
         
         <Contact />
       </main>
