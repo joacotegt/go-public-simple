@@ -78,7 +78,7 @@ export function Brands() {
     },
     {
       name: "Lenovo",
-      logo: "/lovable-uploads/61add61a-1011-4b6a-8a99-5db58b63fc45.png"
+      logo: "/lovable-uploads/d9cd27e3-596a-4982-954b-2c4f08182a2d.png"
     }
   ];
 
