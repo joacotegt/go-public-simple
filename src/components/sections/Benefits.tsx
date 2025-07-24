@@ -29,13 +29,12 @@ export function Benefits() {
         
         <div className="grid md:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
-            <div 
-              key={index}
-              className="bg-background rounded-lg p-8 shadow-lg hover:shadow-xl transition-all"
-            >
-              <CheckCircle2 className="h-12 w-12 text-accent mb-4" />
-              <h3 className="text-xl font-bold mb-4">{benefit.title}</h3>
-              <p className="text-muted-foreground">{benefit.description}</p>
+            <div key={index} className="group">
+              <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 p-8">
+                <CheckCircle2 className="h-12 w-12 text-accent mb-4 group-hover:scale-105 transition-transform duration-300" />
+                <h3 className="text-xl font-bold mb-4">{benefit.title}</h3>
+                <p className="text-muted-foreground">{benefit.description}</p>
+              </div>
             </div>
           ))}
         </div>
