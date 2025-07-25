@@ -21,22 +21,22 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="py-20 bg-muted">
+    <section className="py-12 bg-muted">
       <div className="container mx-auto px-6 md:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-3">
           Lo que dicen nuestros proveedores
         </h2>
         
-        <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto">
+        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
           Nos encargamos de todo el proceso para que nuestros proveedores puedan enfocarse en lo que mejor saben hacer
         </p>
         
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="p-8 bg-background">
-              <Quote className="h-8 w-8 text-accent mb-4 opacity-50" />
+            <Card key={index} className="p-6 bg-background">
+              <Quote className="h-6 w-6 text-accent mb-3 opacity-50" />
               
-              <blockquote className="mb-6 text-lg italic">
+              <blockquote className="mb-4 text-base italic">
                 "{testimonial.quote}"
               </blockquote>
               

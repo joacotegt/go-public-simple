@@ -70,7 +70,7 @@ export function HowItWorks() {
   };
 
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-16 relative overflow-hidden">
       <div 
         className="absolute inset-0 z-0"
         style={{
@@ -81,11 +81,11 @@ export function HowItWorks() {
         }}
       />
       <div className="container relative z-10 mx-auto px-6 md:px-8">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+        <div className="max-w-3xl mx-auto text-center mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
             ¿Cómo funciona?
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-base text-muted-foreground">
             No solo automatizamos procesos, sino que nos hacemos cargo de toda la cadena de valor
           </p>
         </div>
@@ -103,7 +103,7 @@ export function HowItWorks() {
             return (
               <motion.div 
                 key={index} 
-                className="relative bg-card rounded-xl shadow-md p-8 border border-border/50 overflow-hidden"
+                className="relative bg-card rounded-lg shadow-md p-6 border border-border/50 overflow-hidden"
                 variants={itemVariants}
               >
                 <div className="text-5xl font-bold text-primary/10 absolute top-3 right-3 pointer-events-none">
@@ -114,10 +114,10 @@ export function HowItWorks() {
                   className={`rounded-full bg-card p-4 inline-flex mb-6 shadow-sm border border-border/60 ${feature.color}`}
                   variants={iconVariants}
                 >
-                  <Icon className="h-8 w-8" />
+                  <Icon className="h-6 w-6" />
                 </motion.div>
                 
-                <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
+                <h3 className="text-lg font-bold mb-3">{feature.title}</h3>
                 <p className="text-muted-foreground">{feature.description}</p>
                 
                 {index < features.length - 1 && (

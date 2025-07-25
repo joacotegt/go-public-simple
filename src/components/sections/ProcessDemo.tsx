@@ -49,14 +49,14 @@ export function ProcessDemo() {
   // Transform scroll progress to step progress
   const notificationOpacity = useTransform(scrollYProgress, [0, 0.2, 0.7], [0, 1, 1]);
   const progressWidth = useTransform(scrollYProgress, [0.15, 0.75, 0.85], [0, 100, 100]);
-  return <section ref={containerRef} className="py-24 bg-gradient-to-br from-background to-muted/20 overflow-hidden">
+  return <section ref={containerRef} className="py-16 bg-gradient-to-br from-background to-muted/20 overflow-hidden">
       <div className="container mx-auto px-6 md:px-8">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
               Cronologis en acción
             </h2>
-            <p className="text-lg text-muted-foreground">Mira cómo procesamos una licitación en tiempo real</p>
+            <p className="text-base text-muted-foreground">Mira cómo procesamos una licitación en tiempo real</p>
           </div>
 
           {/* Notification Popup */}
@@ -64,7 +64,7 @@ export function ProcessDemo() {
           opacity: notificationOpacity,
           y: useTransform(scrollYProgress, [0, 0.2, 1], [-100, 0, 0])
         }}>
-            <div className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 p-8 max-w-2xl w-full border-2 border-blue-200">
+            <div className="group bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 p-6 max-w-2xl w-full border-2 border-blue-200">
               <div className="flex items-start gap-6">
                 <div className="bg-blue-500 rounded-full p-4 animate-bounce">
                   <Bell className="h-8 w-8 text-white animate-pulse" />
@@ -102,7 +102,7 @@ export function ProcessDemo() {
             const isCurrent = useTransform(scrollYProgress, [step.triggerPoint - 0.05, step.triggerPoint, step.triggerPoint + 0.1, 0.75], [0, 1, 0, 0]);
             return <motion.div key={step.id} className="group relative">
               <motion.div 
-                className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 p-6" 
+                className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 p-5" 
                 style={{
                   opacity: stepOpacity,
                   x: stepX,
@@ -148,7 +148,7 @@ export function ProcessDemo() {
           </div>
 
           {/* Provider Email Notification */}
-          <motion.div className="mt-12 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 p-8 border-2 border-blue-200" style={{
+          <motion.div className="mt-8 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 p-6 border-2 border-blue-200" style={{
           opacity: useTransform(scrollYProgress, [0.6, 0.7, 1], [0, 1, 1]),
           y: useTransform(scrollYProgress, [0.6, 0.7, 1], [20, 0, 0])
         }}>
