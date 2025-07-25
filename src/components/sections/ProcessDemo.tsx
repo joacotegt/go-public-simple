@@ -60,12 +60,12 @@ export function ProcessDemo() {
           </div>
 
           {/* Notification Popup */}
-          <motion.div className="mb-12 flex justify-center" style={{
+          <motion.div className="mb-16 md:mb-12 flex justify-center" style={{
           opacity: notificationOpacity,
           y: useTransform(scrollYProgress, [0, 0.2, 1], [-100, 0, 0])
         }}>
-            <div className="group bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 p-6 max-w-2xl w-full border-2 border-blue-200">
-              <div className="flex items-start gap-6">
+            <div className="group bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 p-8 md:p-6 max-w-2xl w-full border-2 border-blue-200">
+              <div className="flex items-start gap-8 md:gap-6">
                 <div className="bg-blue-500 rounded-full p-4 animate-bounce">
                   <Bell className="h-8 w-8 text-white animate-pulse" />
                 </div>
