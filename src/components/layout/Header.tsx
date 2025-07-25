@@ -10,7 +10,7 @@ export function Header() {
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}>Inicio</a>
             <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground cursor-pointer" onClick={() => {
-              const section = document.querySelector('[id*="how"], [class*="how"]') || document.querySelector('section:nth-of-type(4)');
+              const section = document.getElementById('how-it-works');
               section?.scrollIntoView({ behavior: 'smooth' });
             }}>Cómo funciona</a>
             <a href="#contact" className="text-primary-foreground/90 hover:text-primary-foreground cursor-pointer" onClick={() => {

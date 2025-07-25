@@ -70,7 +70,7 @@ export function HowItWorks() {
   };
 
   return (
-    <section className="py-16 relative overflow-hidden">
+    <section id="how-it-works" className="py-16 relative overflow-hidden">
       <div 
         className="absolute inset-0 z-0"
         style={{
