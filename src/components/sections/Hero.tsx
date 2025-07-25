@@ -33,7 +33,7 @@ export function Hero() {
           
           <div className="flex justify-center lg:justify-end">
             <img 
-              src="/lovable-uploads/962a5cf1-33e6-4b73-b5f1-364f0da6ea52.png" 
+              src="/lovable-uploads/b0000acb-d313-4d5a-a346-0cbab892010f.png" 
               alt="Cronologis delivery to healthcare" 
               className="max-w-full h-auto rounded-lg shadow-2xl"
             />
