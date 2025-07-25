@@ -11,9 +11,9 @@ export function Hero() {
       </div>
       
       <div className="container relative z-10 mx-auto px-6 md:px-8 py-20">
-        <div className="max-w-2xl mx-auto text-center">
-          <div>
-            <img src="/lovable-uploads/0fac1cf9-825c-49b7-948d-924dcdbce49f.png" alt="Cronologis" className="h-16 mx-auto mb-8" />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="text-center lg:text-left">
+            <img src="/lovable-uploads/0fac1cf9-825c-49b7-948d-924dcdbce49f.png" alt="Cronologis" className="h-16 mx-auto lg:mx-0 mb-8" />
             
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Vende al Estado sin complicaciones
@@ -29,6 +29,14 @@ export function Hero() {
               behavior: 'smooth'
             });
           }}>Contáctanos</Button>
+          </div>
+          
+          <div className="flex justify-center lg:justify-end">
+            <img 
+              src="/lovable-uploads/67867190-284b-4fb4-a9d8-af1055402470.png" 
+              alt="Cronologis delivery to healthcare" 
+              className="max-w-full h-auto rounded-lg shadow-2xl"
+            />
           </div>
         </div>
       </div>
