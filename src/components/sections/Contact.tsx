@@ -13,7 +13,7 @@ export function Contact() {
       opacity: 0.1
     }} />
       
-      <div className="container relative z-10 mx-auto px-4">
+      <div className="container relative z-10 mx-auto px-6 md:px-8">
         <div className="max-w-xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
             Comienza a vender al Estado
