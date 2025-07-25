@@ -11,7 +11,7 @@ export function Header() {
             }}>Inicio</a>
             <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground cursor-pointer" onClick={() => {
               setTimeout(() => {
-                const section = document.getElementById('how-it-works');
+                const section = document.getElementById('how-it-works-content');
                 if (section) {
                   section.scrollIntoView({ behavior: 'smooth' });
                 }
