@@ -8,7 +8,7 @@ const comparisonData = [{
 }, {
   aspect: "Tiempo de pago",
   traditional: "Hasta 120 días o más",
-  cronologis: "Garantizado en 30 días"
+  cronologis: "Garantizado en 60 días"
 }, {
   aspect: "Recursos necesarios",
   traditional: "Personal dedicado a licitaciones",

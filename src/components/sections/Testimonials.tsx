@@ -8,7 +8,7 @@ const testimonials = [
     company: "Distribuidora Tecnológica S.A."
   },
   {
-    quote: "El plazo de pago de 30 días fue un factor decisivo para nosotros. Ahora podemos vender al Estado sin preocuparnos por nuestra liquidez.",
+    quote: "El plazo de pago de 60 días fue un factor decisivo para nosotros. Ahora podemos vender al Estado sin preocuparnos por nuestra liquidez.",
     author: "Felipe Rojas",
     company: "Equipamiento Médico Chile"
   },

@@ -20,7 +20,7 @@ export function Hero() {
             </h1>
             
             <p className="text-xl md:text-2xl text-white/90 mb-12">
-              Nosotros nos encargamos de todo el proceso. Tú solo vendes y cobras en 30 días.
+              Nosotros nos encargamos de todo el proceso. Tú solo vendes y cobras en 60 días.
             </p>
             
             <Button size="lg" variant="hero" className="text-lg px-8 py-6" onClick={() => {

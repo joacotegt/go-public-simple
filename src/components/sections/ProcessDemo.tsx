@@ -168,7 +168,7 @@ export function ProcessDemo() {
               <div className="flex justify-center items-center gap-6 text-sm">
                 <div className="flex items-center gap-2">
                   <DollarSign className="h-4 w-4 text-green-500" />
-                  <span>Pago garantizado en 30 días</span>
+                  <span>Pago garantizado en 60 días</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock className="h-4 w-4 text-primary" />

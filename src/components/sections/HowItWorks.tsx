@@ -27,7 +27,7 @@ const features = [
   {
     number: "04",
     title: "Gestión financiera sin riesgos",
-    description: "Asumimos el 100% del riesgo financiero y te pagamos en 30 días, sin importar cuándo pague el Estado.",
+    description: "Asumimos el 100% del riesgo financiero y te pagamos en 60 días, sin importar cuándo pague el Estado.",
     icon: BanknoteIcon,
     color: "text-primary"
   }

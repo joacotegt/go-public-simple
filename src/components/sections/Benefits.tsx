@@ -7,7 +7,7 @@ const benefits = [
   },
   {
     title: "Sin riesgo financiero",
-    description: "Pago garantizado en 30 días, sin importar cuándo pague el Estado."
+    description: "Pago garantizado en 60 días, sin importar cuándo pague el Estado."
   },
   {
     title: "Sin cambios operativos",

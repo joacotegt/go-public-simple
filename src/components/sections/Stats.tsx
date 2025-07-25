@@ -16,7 +16,7 @@ export function Stats() {
             <div className="text-sm text-primary-foreground/80">Clientes públicos</div>
           </div>
           <div>
-            <div className="text-3xl font-bold mb-2">30</div>
+            <div className="text-3xl font-bold mb-2">60</div>
             <div className="text-sm text-primary-foreground/80">Días para pago</div>
           </div>
         </div>
