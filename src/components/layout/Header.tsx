@@ -10,8 +10,12 @@ export function Header() {
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}>Inicio</a>
             <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground cursor-pointer" onClick={() => {
-              const section = document.getElementById('how-it-works');
-              section?.scrollIntoView({ behavior: 'smooth' });
+              setTimeout(() => {
+                const section = document.getElementById('how-it-works');
+                if (section) {
+                  section.scrollIntoView({ behavior: 'smooth' });
+                }
+              }, 100);
             }}>Cómo funciona</a>
             <a href="#contact" className="text-primary-foreground/90 hover:text-primary-foreground cursor-pointer" onClick={() => {
               const contactSection = document.getElementById('contact');
