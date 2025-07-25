@@ -18,8 +18,8 @@ const Index = () => {
       <main className="bg-background text-foreground">
         <Hero />
         <Brands />
-        <Benefits />
         <Coverage />
+        <Benefits />
         <HowItWorks />
         <ProcessDemo />
         <Contact />
