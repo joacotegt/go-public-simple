@@ -11,9 +11,13 @@ export function Header() {
             }}>Inicio</a>
             <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground cursor-pointer" onClick={() => {
               setTimeout(() => {
-                const section = document.getElementById('how-it-works-content');
+                const section = document.getElementById('how-it-works');
                 if (section) {
-                  section.scrollIntoView({ behavior: 'smooth' });
+                  const elementPosition = section.offsetTop;
+                  window.scrollTo({
+                    top: elementPosition - 80,
+                    behavior: 'smooth'
+                  });
                 }
               }, 100);
             }}>Cómo funciona</a>
