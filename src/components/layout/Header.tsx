@@ -6,9 +6,17 @@ export function Header() {
           <img src="/lovable-uploads/0fac1cf9-825c-49b7-948d-924dcdbce49f.png" alt="Cronologis" className="h-8" />
           
           <nav className="hidden md:flex space-x-6">
-            <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground">Inicio</a>
-            <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground">Cómo funciona</a>
-            <a href="#contact" className="text-primary-foreground/90 hover:text-primary-foreground">Contacto</a>
+            <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground cursor-pointer" onClick={() => {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}>Inicio</a>
+            <a href="#" className="text-primary-foreground/90 hover:text-primary-foreground cursor-pointer" onClick={() => {
+              const section = document.querySelector('[id*="how"], [class*="how"]') || document.querySelector('section:nth-of-type(4)');
+              section?.scrollIntoView({ behavior: 'smooth' });
+            }}>Cómo funciona</a>
+            <a href="#contact" className="text-primary-foreground/90 hover:text-primary-foreground cursor-pointer" onClick={() => {
+              const contactSection = document.getElementById('contact');
+              contactSection?.scrollIntoView({ behavior: 'smooth' });
+            }}>Contacto</a>
           </nav>
           
           <Button variant="hero" size="sm" onClick={() => {
