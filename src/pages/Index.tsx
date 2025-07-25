@@ -3,7 +3,6 @@ import { Benefits } from "@/components/sections/Benefits";
 import { Stats } from "@/components/sections/Stats";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { ProcessDemo } from "@/components/sections/ProcessDemo";
-import { Coverage } from "@/components/sections/Coverage";
 
 import { Brands } from "@/components/sections/Brands";
 
@@ -18,7 +17,6 @@ const Index = () => {
       <main className="bg-background text-foreground">
         <Hero />
         <Brands />
-        <Coverage />
         <Benefits />
         <HowItWorks />
         <ProcessDemo />
